@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Seaweed+Script&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto UDS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<header>
+
+
+
+    <div id="título">
+
+        <h1>Projeto Under The Sea</h1>
+
+    </div>
+
+</header>
+
+<body>
+
+    <section>
+        <p> O Projeto Under the Sea é uma proposta de um jogo mobile, single player com elementos de exploração, puzzle
+            e RPG.</p>
+        <p> Como o nome já indica, a inspiração para o tema do jogo vem do filme A Pequena Sereia (Disney, 1989), em
+            Under the Sea o jogador assume o controle de uma jovem sereia que coleciona objetos humanos em sua caverna
+            secreta.
+        </p>
+        <p>
+        <ul> As opções de custominação de personagem incluem:
+            <li>
+                Rosto: Escolher o rosto da personagem e a cor da pele.
+            </li>
+
+            <li>
+                Cabelo: Estilo e cor do cabelo*.
+            </li>
+
+            <li>
+                Roupa: Selecionar a roupa (parte de cima)*.
+            </li>
+
+            <li>Cauda: Selecionar estilo e cor da cauda*.
+
+            </li>
+
+            <li>
+                Acessórios: Escolher acessórios, pinturas corporais/tribais, tatuagens e itens extras*.
+            </li>
+
+        </ul>
+        <p>* Com exceção dos rostos que sempre serão todos liberados, as demais categorias contarão com itens
+            desbloqueáveis e da loja.</p>
+
+        </p>
+        <figure>
+
+            <img class="examples" src="./assets/charactercustomization.jpg"
+                alt="protótipo de tela de customização de personagem">
+
+            <figcaption> Demonstração da Tela de criação de Personagem e Customização.</figcaption>
+
+        </figure>
+        <br>
+        <br>
+        <figure>
+
+            <img class="examples" id="conceito" src="./assets/mermaids concept.jpg"
+                alt="exemplo de variações na customização de personagem">
+
+            <figcaption> Demonstração de variação de cores e estilos das personagens. <br> As marcações nas
+                "articulações" são para mostrar os pontos separados de movimentação e não estarão presentes na versão
+                final.</figcaption>
+
+        </figure>
+
+        <br>
+        <br>
+
+        <p> Outra parte importante da custominação é a caverna, onde serão expostos os artefatos da personagem.</p>
+        <ul>
+            <li> O jogador escolherá a sua caverna/gruta através de modelos pré-existentes.</li>
+            <br>
+            <li>A organização dos artefatos se dará através de um grid. Cada artefato, dependendo do tamanho ocupará um
+                número x de espaços na grade, <br>o jogador irá dispor seus artefatos como preferir, respeitando os
+                espaços disponíveis na grade, podendo colocar os itens na vertical ou na horizontal.</li>
+            <br>
+            <li> Cada gruta terá um espaço padrão na grade, que é limitado, o jogador poderá aumentar os espaços com o
+                passar dos níveis ou comprar mais espaço na loja.</li>
+            <br>
+            <li> Um baú de inventário estará por padrão em cada gruta, disponível para guardar os artefatos que não
+                estão expostos e demais itens.</li>
+            <br>
+            <li> com o sistema de pets, <strong>(que será explicado mais abaixo)</strong> os que não estiverem
+                acompanhando a personagem, ficarão em idle na caverna, com animações em looping.</li>
+        </ul>
+
+        <figure>
+            <img class="examples" src="./assets/cave screen.jpg" alt="protótipo da UI na caverna">
+            <figcaption> Demonstração da Screen da Caverna.</figcaption>
+        </figure>
+
+        <br>
+
+        <figure>
+            <img class="examples" src="./assets/cave edit screen.jpg" alt="protótipo da UI de edição da caverna">
+            <figcaption> Demonstração da Screen de Edição e Organização da Caverna.<br> Os retângulos destacados
+                demonstram a posição dos itens na grid.</figcaption>
+        </figure>
+
+        <br>
+        <br>
+        Após criar sua personagem, nomeá-la e escolher a sua caverna o jogo começa.<br>
+        A primeira tarefa é um breve tutorial ensinando a customização da caverna, um kit inicial de itens está no baú,
+        <br>
+        o kit contém 2 artefatos para o jogador aprender sobre o sistema de display e organização e um item consumível
+        <strong>(mais sobre os artefatos e consumíveis abaixo)</strong>.
+        <br>
+        <br>
+        Após esse tutorial, uma cena se inicia, um <strong>npc</strong> aparece e começa um diálogo com o jogador que
+        aparece em balões de texto,
+        <br> ele conta que encontrou um local de naufrágio e achou que a sereia teria interesse, ele entrega para ela um
+        <strong>mapa</strong>.
+        <br>
+        Neste primeiro momento só um local estará disponível, além da localização da caverna mas depois ele será usado
+        para o jogador selecionar as fases e eventos.
+        <br>
+        Posteriormente será a tela onde o jogador selecionará os consumíveis, o pet e demais configurações antes de
+        iniciar um level.
+        <br>
+
+        <p> O jogador então começa a primeira fase.
+
+        <figure>
+            <img class="examples" src="./assets/gamescreen.jpg" alt="protótipo da tela de jogo">
+            <figcaption> Demonstração da tela de jogo.<br></figcaption>
+        </figure>
+
+        <h3>
+            Os elementos da barra superior significam, da esquerda para a direita:</h3>
+
+        <ol>
+
+            <li>Configurações e opções.</li>
+            <li> Barra de Experiência e Nível.</li>
+            <li>Barra de Energia.</li>
+            <li> Barra de moedas.</li>
+            <li> Barra de cristais.</li>
+
+        </ol>
+        A Barra de Experiência indica o level da personagem, quanto mais alto, mais energia disponível, certos
+        artefatos, itens e recompensas em geral são liberados de acordo com o nível.
+        <br>
+        <br>
+        A Barra de Energia indica a quantidade de ações que a personagem poderá executar em cada fase. <br>A energia
+        recarrega automaticamente com o passar do tempo. <br>
+        Alguns consumíveis dão bônus de energia. A energia pode ser regarregada com refills disponíveis na loja. <br>Ao
+        ficar sem energia, o jogador pode permanecer no level e esperar recarregar ou voltar para a caverna.
+        <br>
+        <br>
+        A Barra de Moedas mostra quanto o jogador possui de moedas, que é uma das formas de economia do jogo, após
+        completar eventos,<br> passar de nível, executar ações e nas recompensas de final de level, o jogador ganhará
+        uma certa quantidade de moedas.
+        <br> Elas servem para comprar cosméticos e itens na loja do jogo.
+        <br>
+        <br>
+        A Barra de Cristais mostra a quantidade de Cristais que o jogador possui, essa moeda serve para comprar
+        cosméticos, itens, pets e recursos exclusivos.<br> Cristais são comprados com dinheiro real e encontrados em uma
+        porcentagem mais rara durante o jogo em diversos momentos.<br>
+        <br>
+        Uma fase comum é mais ou menos como mostra a imagem, um cenário e vários pontos de interação, descrevendo ações
+        que custarão energia para ser executadas.<br> Cada ponto de interação pode ter mais de um nível para ser
+        completo, cada nível custa 1 ponto de energia.<br>
+        Cada fase tem um tempo para ser completada, equivalente ao tempo e a quantidade de pontos de interesse.<br>
+        Cada ponto de interesse possui uma chance (calculada randomicamente) de levar o jogador até um evento, eventos
+        são "tocas de coelho",<br> pequenas histórias interativas em forma de texto,ilustradas com imagens fixas, onde
+        dependendo das escolhas do jogador, poderão oferecer recompensas extras.<br>
+        Ao clicar num ponto de interação, uma pequena animação será executada, equivalente à ação do personagem.<br>
+        Além dos eventos comuns, existem eventos de pet, que recompensarão o jogador com um companheiro animal para a
+        sereia.
+        <br>
+        <br>
+        Ao terminar uma fase, o jogo calculará o desempenho do jogador, se concluiu todos os pontos de interação,
+        calculará os bônus de eventos se tiver e assim recompensará o jogador com xp e um Baú de Tesouro.
+        <br>
+        O Baú de Tesouro irá conter um número x de itens de valores diversos, dependendo do nível e do desempenho do
+        jogador durante a fase. <br>
+        Cada Baú irá sempre trazer um artefato e uma quantidade x de moedas, podendo também trazer cristas, itens
+        consumíveis e desbloquear cosméticos.
+
+        </p>
+        <p> Além das fases comuns, o jogador poderá mandar a sereia para expedições, com quatro níveis disponíveis (
+            1hr, 6 hrs, 12hrs e 24hrs), as expedições recompensam o jogador com itens e xp calculados aleatoriamente e
+            equivalentes ao tempo.<br> Ao enviar a sereia para uma expedição, o jogador terá que esperar o tempo
+            escolhido ou usar cristais para pular a espera.</p>
+        <br>
+<br><br>
+<h2> Sobre a concepção e inspirações para o jogo.</h2>
+        <figure>
+            <img class="examples" src="./assets/start screen.jpg" alt="protótipo da tela inicial do jogo">
+            <figcaption> Demonstração da tela inicial do jogo.<br></figcaption>
+        </figure>
+
+<br>
+
+    <h3>Por que Sereias?</h3>
+
+    <p>Sereias são um nicho pouco explorado no mundo dos jogos, existem pouquíssimos jogos com a presença de sereias e menos ainda exclusivamente sobre o tema,<br> então é um mercado não saturado e que possui um publico diversificado que tem fascínio pelo tema.<br>
+    Além disso, para a jogabilidade e proposta do jogo, o tema se encaixa como uma luva.<br>
+    Em maio do ano que vem, um dos mais aguardados lançamentos da Disney é o live action de A Pequena Sereia, ou seja, o assunto estará em alta por um tempo e podemos aproveitar isso.
+    </p>
+
+    <h3> Sobre o tema, gráficos e jogabilidade.</h3>
+    <p>A inspiração principal para o jogabilidade e os gráficos é o jogo Kim Kardashian Hollywood, pela simplicidade da premissa e o sucesso que ele teve.<br> O tema como já foi dito, foi inspirado pelo filme A Pequena Sereia e pela ideia de "Cozy Games", jogos de conforto, sobre colecionar e organizar coisas.<br></p>
+
+    <h3>Público Alvo:</h3>
+    <p>O público alvo é em primeiro lugar crianças e adolescentes, também acho que o jogo tem grande apelo para mulheres e homens gays, que costumam adorar o tema de Sereias.<br></p>
+
+    <h3> Demonstração da Vibe do jogo:</h3>
+    <p>A ideia de Under the Sea ser um jogo de conforto envolverá desde a paleta de cores até os sons, predominando os sons calmos do fundo do mar, criando uma atmosfera aconchegante e agradável para o jogador.<br><br></p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mB5tweUJ4EQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <br>
+    <br>
+
+    <h2> Artefatos, Sistemas, Loja e Itens:</h2>
+    <h3> Artefatos </h3>
+    <p>Os artefatos são os itens que a sereia coleciona em sua caverna, quanto maior o nível da personagem mais chances de encontrar artefatos raros. <br>Os artefatos são classificados por categorias: comum, raro, único. Eles podem ser vendidos por moedas ou, no caso de itens únicos, por cristais.</p>
+    <p><h3>Sistema de Pets</h3>
+    Os pets são companheiros animais que podem acompanhar a sereia nas fases e expedições ou podem ser exibidos na caverna.<br>
+    Os pets também são classificados por categorias: comuns, raros e únicos.<br>
+    Pets comuns dão bônus de energia para a sereia em fases comuns.<br>
+    Pets raros dão um bônus maior de energia e aumentam a porcentagem de chances de encontrar cristais, artefatos de maior valor e mais recompensas tanto nas fases quanto nas expedições.<br>
+    Pets Únicos são como os raros mas com bônus ainda maiores.<br>
+    Os pets podem ser vendidos na loja também, como os artefatos.<br>
+    Pets únicos poderão ser vendidos na loja por cristais ou em pacotes de cosméticos.<br></p>
+    <h3>Loja do jogo</h3>
+    <p>A loja do jogo é um menu com vários submenus onde o jogador poderá:
+    <ul>
+        <li>Comprar e vender artefatos e pets.</li>
+        <li>Comprar cristais, pacotes de cosméticos e refills de energia com dinheiro real.</li>
+        <li> Comprar e vender itens consumíveis.</li>
+    </ul>
+    </p>
+    <p><h3>Itens consumíveis</h3>
+    Os itens consumíveis são itens que o jogador pode usar antes de uma fase ou expedição e que garantem alguns bônus.<br> Classificados por duas categorias:comum e raro.<br>
+    Os consumíveis podem ser encontrados nos pontos de interesse, durante expedições, no baú de tesouro e na loja. Os bônus são +energia, +sorte (aumenta a probabilidade de encontrar recompensas raras e únicas) entre outros.<br></p>
+
+    
+    <p><h2> Expansões, Cosméticos e outras Features.</h2>
+        <h3>Expansões:</h3>
+        O jogo contará com expansões gratuitas e pagas, aumentando a variedade de fases, eventos e história, com várias temáticas.
+
+        <h3> Pacotes de Cosméticos</h3>
+        Pacotes de cosméticos exclusivos e temáticos serão lançados, alguns serão desbloqueáveis em eventos, outros somente adquiridos na loja por cristais.
+
+        <h3>Social e planos para o futuro.</h3>
+        Interação entre jogadores, podendo adicionar amigos e enviar presentes por mensagens.<br>
+        Jogador pode hostear uma sala de chat com até 5 amigos, onde poderão conversar por texto ou mensagem de voz.<br>
+        Salas sociais onde jogadores poderão entrar ( o personagem ocupará um local pré-definido) onde poderá conversar com outros jogadores por mensagem de texto.<br>
+        Se o jogo for bem sucedido, uma continuação com fases no estilo de plataforma expandindo a jogabilidade, mecânicas, interação e customização.<br>
+    </p>
+
+    
+   <h2>Considerações Finais</h2>
+   <p> Isto tudo é um conceito, não sei como funcionaria da parte de programação, acredito que podemos pesquisar sobre a criação do Kim Kardashian Hollywood<br> e a engine utilizada, que pelo que pesquisei é basicamente javascript e c++.</p>
+   <p> O Conteúdo do jogo em números, para o lançamento:</p>
+   <ul>Criação de Personagem:
+    <li>Rostos: 5</li>
+    <li>Cabelos: 5 iniciais 5 desbloqueáveis com moedas 5 desbloqueáveis com cristais</li>
+    <li>Roupas: 3 iniciais 5 desbloqueáveis com moedas 5 desbloqueáveis com cristais</li>
+    <li>Caudas: 3 iniciais 2 desbloqueáveis com moedas 2 desbloqueáveis com cristais</li>
+    <li> Acessórios Diversos: 5 iniciais 5 desbloqueáveis com moedas 5 desbloqueáveis com cristais </li>
+   </ul>
+
+   <ul> Caverna 
+   <li>3 selecionáveis no início do jogo.</li>
+   <li>Expandir as cavernas com moedas.</li>
+   <li> 3 skins de caverna desbloqueáveis com cristais</li>
+    </ul>
+
+   <ul> Fases:
+    <li>Variações de Fases e Cenários: 30</li>
+    <li>Eventos: 20</li>
+   </ul>
+
+   <ul>Artefatos
+    <li> Comuns: 50</li>
+    <li>Raros: 40</li>
+    <li> Únicos: 30</li>
+
+   </ul>
+   <ul>Pets
+    <li>Comuns: 5 </li>
+    <li>Raros:3</li>
+    <li>Únicos:5 encontrados no jogo 2 desbloqueáveis por cristais.</li>
+   </ul>
+
+   <ul> Itens Consumíveis
+    <li>Comuns: 5</li>
+    <li>Raros: 3 (poções)</li>
+
+
+   </ul>
+<p>
+    Outras ideias ainda não desenvolvidas mas já cogitadas são: criar uma storyline para o jogo, possibilidade de jogar com personagens masculinos e sistema de inventário e bags, mini-games e puzzles. 
+</p>
+<p> Por enquanto é isso, todas ideias e sugestões são bem-vindas.</p>
+
+
+
+    </section>
+
+
+
+</body>
+<footer> made by blondambition666</footer>
+
+</html>
